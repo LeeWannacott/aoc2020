@@ -1,0 +1,17 @@
+# --- Day 1: Report Repair ---
+
+expense_entries = []
+input = open("input.txt","r")
+for line in input:
+    expense_entries.append(line)
+
+
+def add_and_see_if_2020(num1):
+   for number in expense_entries:
+       if (int(number) + int(num1) == 2020):
+           result = int(number) * int(num1)
+           return f"2020 + {result}" 
+    
+x = map(add_and_see_if_2020,expense_entries)    
+ 
+print(list(x))
