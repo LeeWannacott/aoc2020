@@ -1,7 +1,7 @@
 # --- Day 1: Report Repair ---
 
 expense_entries = []
-input = open("input.txt","r")
+input = open("day1input.txt","r")
 for line in input:
     expense_entries.append(line)
 
